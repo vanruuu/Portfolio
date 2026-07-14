@@ -1,75 +1,59 @@
-# React + TypeScript + Vite
+# Pawan Kumar Tripathi — Portfolio
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+A professional portfolio website for Pawan Kumar Tripathi, a Steel Fixer with 5+ years of reinforcement construction experience across India and Israel.
 
-Currently, two official plugins are available:
+**Live site:** https://[your-vercel-link].vercel.app
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react) uses [Oxc](https://oxc.rs)
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react-swc) uses [SWC](https://swc.rs/)
+## About
 
-## React Compiler
+This site showcases professional experience, core trade skills, and contact details for a construction/reinforcement steel fixer, presented with an industrial dark theme and smooth scroll animations.
 
-The React Compiler is not enabled on this template because of its impact on dev & build performances. To add it, see [this documentation](https://react.dev/learn/react-compiler/installation).
+## Tech Stack
 
-## Expanding the ESLint configuration
+- **React 18** + **TypeScript** — component structure and type safety
+- **Vite** — build tool and dev server
+- **Tailwind CSS v4** — utility-first styling with a custom steel/safety-orange theme
+- **Framer Motion** — scroll-triggered animations
+- **Lucide React** — icon set
+- **Vercel** — hosting and deployment
 
-If you are developing a production application, we recommend updating the configuration to enable type-aware lint rules:
+## Sections
 
-```js
-export default defineConfig([
-  globalIgnores(['dist']),
-  {
-    files: ['**/*.{ts,tsx}'],
-    extends: [
-      // Other configs...
+- Hero — name, title, primary CTA
+- Highlights — key stats (experience, countries, safety record)
+- About — professional summary
+- Experience — timeline of roles at Solel Boneh (Israel) and prior contractor work (India)
+- Skills — core trade competencies
+- Education — academic background
+- Contact — phone, email, WhatsApp direct link
 
-      // Remove tseslint.configs.recommended and replace with this
-      tseslint.configs.recommendedTypeChecked,
-      // Alternatively, use this for stricter rules
-      tseslint.configs.strictTypeChecked,
-      // Optionally, add this for stylistic rules
-      tseslint.configs.stylisticTypeChecked,
+## Running Locally
 
-      // Other configs...
-    ],
-    languageOptions: {
-      parserOptions: {
-        project: ['./tsconfig.node.json', './tsconfig.app.json'],
-        tsconfigRootDir: import.meta.dirname,
-      },
-      // other options...
-    },
-  },
-])
+\`\`\`bash
+git clone https://github.com/vanruuu/Portfolio.git
+cd Portfolio
+npm install
+npm run dev
+\`\`\`
 
-```
+Open the local URL shown in the terminal (typically `http://localhost:5173`).
 
-You can also install [eslint-plugin-react-x](https://github.com/Rel1cx/eslint-react/tree/main/packages/plugins/eslint-plugin-react-x) and [eslint-plugin-react-dom](https://github.com/Rel1cx/eslint-react/tree/main/packages/plugins/eslint-plugin-react-dom) for React-specific lint rules:
+## Building for Production
 
-```js
-// eslint.config.js
-import reactX from 'eslint-plugin-react-x'
-import reactDom from 'eslint-plugin-react-dom'
+\`\`\`bash
+npm run build
+\`\`\`
 
-export default defineConfig([
-  globalIgnores(['dist']),
-  {
-    files: ['**/*.{ts,tsx}'],
-    extends: [
-      // Other configs...
-      // Enable lint rules for React
-      reactX.configs['recommended-typescript'],
-      // Enable lint rules for React DOM
-      reactDom.configs.recommended,
-    ],
-    languageOptions: {
-      parserOptions: {
-        project: ['./tsconfig.node.json', './tsconfig.app.json'],
-        tsconfigRootDir: import.meta.dirname,
-      },
-      // other options...
-    },
-  },
-])
+Output goes to the `dist/` folder, ready for static hosting.
 
-```
+## Deployment
+
+Deployed on [Vercel](https://vercel.com), auto-deploying on every push to `main`.
+
+## Editing Content
+
+All personal/professional information lives in a single file: `src/data/profile.ts`. Update name, experience, skills, or contact details there — no need to touch component files.
+
+## License
+
+Personal project. All rights reserved.
