@@ -1,0 +1,24 @@
+@import "tailwindcss";
+
+@theme {
+  --color-steel-950: #0a0c0f;
+  --color-steel-900: #12161b;
+  --color-steel-800: #1c222a;
+  --color-steel-700: #2a323c;
+  --color-steel-400: #8b96a3;
+  --color-steel-200: #dbe0e5;
+  --color-safety-500: #ff6b35;
+  --color-safety-400: #ff8a5c;
+  --font-display: "Sora", sans-serif;
+  --font-body: "Inter", sans-serif;
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+body {
+  background-color: var(--color-steel-950);
+  color: var(--color-steel-200);
+  font-family: var(--font-body);
+}
