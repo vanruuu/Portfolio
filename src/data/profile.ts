@@ -1,13 +1,19 @@
 export const profile = {
   name: "Pawan Kumar Tripathi",
   title: "Steel Fixer",
-  tagline: "5+ years reinforcing structures across India and Israel",
+  tagline: "Precision reinforcement work for structures built to last — across India and Israel.",
   phone: "+91 9555803211",
   whatsapp: "919555803211",
   email: "pawankumartripathi09@gmail.com",
   location: "Prayagraj, Uttar Pradesh, India",
   summary:
-    "Dedicated and skilled Steel Fixer with over 5 years of experience in reinforcing steel installation and construction projects in Israel and India. Proficient in interpreting technical drawings and implementing precise steel fixing techniques to enhance structural integrity. Known for a strong commitment to safety, teamwork, and efficiency, consistently delivering high-quality results within project timelines.",
+    "I am a Steel Fixer whose work sits at the exact point where a blueprint becomes a building. Over more than five yearsspanning large-scale sites in Airport City, Israel with Solel Boneh, and formative years on construction projects across Uttar Pradesh, India he has built a reputation for precision: bars cut to exact spec, mesh and rebar assemblies that hold their shape under load, and structural layouts read straight off complex engineering drawings without a margin for error. What sets him apart isn't just the technical skill, it's the discipline around it: coordinating tightly with concrete pour teams so timing never slips, keeping a work area clean enough that hazards don't get a chance to happen, and carrying a safety record with zero incidents through years on active sites. He's the fixer a site supervisor stops worrying about.",
+  highlights: [
+    { label: "Years of Experience", value: "5+" },
+    { label: "Countries Worked", value: "2" },
+    { label: "Safety Incidents", value: "0" },
+    { label: "Sites Delivered", value: "Multiple" },
+  ],
   experience: [
     {
       role: "Steel Fixer",
@@ -35,10 +41,14 @@ export const profile = {
   ],
   skills: [
     "Rebar Installation",
-    "Concrete Formwork",
-    "Blueprint Reading",
-    "Safety Compliance",
-    "Teamwork",
+    "Steel Bar Cutting & Bending",
+    "Wire Tying & Mesh Installation",
+    "Blueprint & Drawing Interpretation",
+    "Concrete Formwork Coordination",
+    "Structural Layout Precision",
+    "Site Safety Compliance",
+    "Cross-Border Site Experience",
+    "Team Coordination",
     "Time Management",
   ],
   education: [
